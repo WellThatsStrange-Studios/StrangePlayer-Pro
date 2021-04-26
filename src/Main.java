@@ -20,7 +20,7 @@ public class Main {
         frame.setSize(500, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
-        frame.setTitle("StrangePlayer Pro 1.0.0");   //TODO: Everytime theres new release change this
+        frame.setTitle("StrangePlayer Pro 1.1.0");   //TODO: Everytime theres new release change this
 
         panel.setLayout(null);
 
