@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
+
         GUI();
 
     }
@@ -73,6 +74,29 @@ public class Main {
         panel.add(reset2);
 
         System.out.println("[DEBUG] Line 2 done!");
+
+        //Line of content 3
+        JLabel label3 = new JLabel("Mine Diamonds");
+        label3.setBounds(20, 110, 300, 25);
+        panel.add(label3);
+
+        JButton play3 = new JButton("play");
+        JButton stop3 = new JButton("stop");
+        JButton reset3 = new JButton("reset");
+
+        play3.setBounds(250, 110, 70, 25);
+        stop3.setBounds(319, 110, 70, 25);
+        reset3.setBounds(388, 110, 70, 25);
+
+        play3.addActionListener(m.p3);
+        stop3.addActionListener(m.s3);
+        reset3.addActionListener(m.r3);
+
+        panel.add(play3);
+        panel.add(stop3);
+        panel.add(reset3);
+
+        System.out.println("[DEBUG] Line 3 done!");
 
         frame.setVisible(true);
 

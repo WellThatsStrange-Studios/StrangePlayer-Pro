@@ -107,6 +107,54 @@ public class Music {
         }
     };
 
+    //Music track 3
+    URL url3 = classLoader.getResource("assets/Mine_diamonds.wav");
+
+    AudioInputStream audioStream3 = AudioSystem.getAudioInputStream(url3);
+    Clip clip3 = AudioSystem.getClip();
+
+    Boolean clip3IsStopped = false;
+
+    ActionListener p3 = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (!clip3.isOpen()){
+                try {
+                    clip3.open(audioStream3);
+                    System.out.println("[DEBUG] Opened audio clip 3");
+                } catch (LineUnavailableException | IOException lineUnavailableException) {
+                    lineUnavailableException.printStackTrace();
+                }
+            }
+
+            if (clip3.getMicrosecondLength() <= clip3.getMicrosecondPosition()) {
+                if (clip3IsStopped){
+                    clip3IsStopped = false;
+                }else {
+                    clip3.setMicrosecondPosition(0);
+                }
+            }
+            clip3.start();
+            System.out.println("[DEBUG] Started audio clip 3");
+
+        }
+    };
+    ActionListener s3 = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("[DEBUG] Stopped audio clip 3");
+            clip3.stop();
+            clip3IsStopped = true;
+        }
+    };
+    ActionListener r3 = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("[DEBUG] Reseted audio clip 3");
+            clip3.setMicrosecondPosition(0);
+        }
+    };
+
     //Default constructor just for throwing errors
     public Music() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
     }
