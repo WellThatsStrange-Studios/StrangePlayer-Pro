@@ -38,6 +38,10 @@ public class Main {
 
         frame.setIconImage(icon.getImage());
 
+        //Making the JFrame appear centered
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setLocation(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2);
+
         System.out.println("[DEBUG] Icon set!");
 
         panel.setLayout(null);

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StrangePlayer Pro:jar3">
+    <output-path>$PROJECT_DIR$/out/artifacts/StrangePlayer_Pro_jar3</output-path>
+    <root id="archive" name="StrangePlayer Pro.jar">
+      <element id="module-output" name="StrangePlayer Pro" />
+    </root>
+  </artifact>
+</component>
