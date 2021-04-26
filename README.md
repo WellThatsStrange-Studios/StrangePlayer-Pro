@@ -35,4 +35,4 @@ Feel free to contribute to this project, but:
 
 ------
 
-* *This project is a joke, don’t take it seriously.* 😉
+(*) *This project is a joke, don’t take it seriously.* 😉
