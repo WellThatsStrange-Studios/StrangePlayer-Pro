@@ -14,8 +14,6 @@ public class Music {
     AudioInputStream audioStream1 = AudioSystem.getAudioInputStream(url1);
     Clip clip1 = AudioSystem.getClip();
 
-    System.out.println("[DEBUG] Loaded audio clip 1");
-
     Boolean clip1IsStopped = false;
 
     ActionListener p1 = new ActionListener() {
@@ -64,8 +62,6 @@ public class Music {
 
     AudioInputStream audioStream2 = AudioSystem.getAudioInputStream(url2);
     Clip clip2 = AudioSystem.getClip();
-
-    System.out.println("[DEBUG] Loaded audio clip 2");
 
     Boolean clip2IsStopped = false;
 
