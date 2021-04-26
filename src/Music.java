@@ -8,6 +8,8 @@ public class Music {
 
     ClassLoader classLoader = ClassLoaderFinder.class.getClassLoader();
 
+    //TODO: Put each track into separate class
+
     //Music track 1
     URL url1 = classLoader.getResource("assets/Nokia_ringtone_arabic.wav");
 
