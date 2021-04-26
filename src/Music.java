@@ -9,7 +9,7 @@ public class Music {
     ClassLoader classLoader = ClassLoaderFinder.class.getClassLoader();
 
     //Music track 1
-    URL url1 = classLoader.getResource("assets/Dancing_triangle_pumped_up_kicks.wav");
+    URL url1 = classLoader.getResource("assets/Nokia_ringtone_arabic.wav");
 
     AudioInputStream audioStream1 = AudioSystem.getAudioInputStream(url1);
     Clip clip1 = AudioSystem.getClip();
@@ -58,7 +58,7 @@ public class Music {
 
 
     //Music track 2
-    URL url2 = classLoader.getResource("assets/Nokia_ringtone_arabic.wav");
+    URL url2 = classLoader.getResource("assets/Dancing_triangle_pumped_up_kicks.wav");
 
     AudioInputStream audioStream2 = AudioSystem.getAudioInputStream(url2);
     Clip clip2 = AudioSystem.getClip();
