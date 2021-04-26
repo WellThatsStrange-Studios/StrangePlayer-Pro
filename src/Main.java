@@ -4,22 +4,8 @@ import java.io.IOException;
 
 public class Main {
 
-    //Declare everything here if I ever need to access it from multiple methods
-    private static JFrame frame;
-    private static JPanel panel;
-    private static JLabel label1;
-    private static JLabel label2;
-    private static JButton play1;
-    private static JButton stop1;
-    private static JButton reset1;
-    private static JButton play2;
-    private static JButton stop2;
-    private static JButton reset2;
-
-
     public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         GUI();
-
 
     }
 
@@ -28,8 +14,8 @@ public class Main {
         System.out.println("[DEBUG] Doing GUI!");
 
         //Setting JFrame and JPanel
-        frame = new JFrame();
-        panel = new JPanel();
+        JFrame frame = new JFrame();
+        JPanel panel = new JPanel();
 
         frame.setSize(500, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -43,13 +29,13 @@ public class Main {
         Music m = new Music();
 
         //Line of content 1
-        label1 = new JLabel("Arabic Nokia Ringtone");
+        JLabel label1 = new JLabel("Arabic Nokia Ringtone");
         label1.setBounds(20, 30, 200, 25);
         panel.add(label1);
 
-        play1 = new JButton("play");
-        stop1 = new JButton("stop");
-        reset1 = new JButton("reset");
+        JButton play1 = new JButton("play");
+        JButton stop1 = new JButton("stop");
+        JButton reset1 = new JButton("reset");
 
         play1.setBounds(250, 30, 70, 25);
         stop1.setBounds(319, 30, 70, 25);
@@ -66,13 +52,13 @@ public class Main {
         System.out.println("[DEBUG] Line 1 done!");
 
         //Line of content 2
-        label2 = new JLabel("Pumped up kicks triangle");
+        JLabel label2 = new JLabel("Pumped up kicks triangle");
         label2.setBounds(20, 70, 200, 25);
         panel.add(label2);
 
-        play2 = new JButton("play");
-        stop2 = new JButton("stop");
-        reset2 = new JButton("reset");
+        JButton play2 = new JButton("play");
+        JButton stop2 = new JButton("stop");
+        JButton reset2 = new JButton("reset");
 
         play2.setBounds(250, 70, 70, 25);
         stop2.setBounds(319, 70, 70, 25);
