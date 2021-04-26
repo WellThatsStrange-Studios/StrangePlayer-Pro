@@ -1,6 +1,11 @@
+import javax.imageio.ImageIO;
 import javax.sound.sampled.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 
 public class Main {
 
@@ -21,7 +26,19 @@ public class Main {
         frame.setSize(500, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
-        frame.setTitle("StrangePlayer Pro 1.1.0");   //TODO: Everytime theres new release change this
+        frame.setTitle("StrangePlayer Pro 1.2.0");   //TODO: Everytime theres new release change this
+
+        //Loading the icon from jar - I know its overcomplicated
+        ClassLoader classLoader = ClassLoaderFinder.class.getClassLoader();
+        InputStream stream = classLoader.getResourceAsStream("assets/Note_icon.png");
+        BufferedImage image = ImageIO.read(stream);
+        System.out.println(image == null);
+        assert image != null;
+        ImageIcon icon = new ImageIcon(image);
+
+        frame.setIconImage(icon.getImage());
+
+        System.out.println("[DEBUG] Icon set!");
 
         panel.setLayout(null);
 
