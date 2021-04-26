@@ -12,7 +12,7 @@ Just download the `StrangePlayer.Pro.jar` from the latest release in [Releases](
 You need `Java 9 or newer` to run the StrangePlayer Pro. Unfortunately it won run properly on older versions of Java.
 
 Download Java 9 [here](https://www.oracle.com/java/technologies/javase/javase9-archive-downloads.html).
-**We recommend you using the latest Java version because it has the latest security patches.**
+**We recommend you using the latest Java version tho, because it has the latest security patches.**
 ### Bugs and bad design
 
 There is a lot of bugs, feel free to write them to [Issues](https://github.com/WellThatsStrange-Studios/StrangePlayer-Pro/issues).
