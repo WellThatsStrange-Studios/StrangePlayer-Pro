@@ -27,7 +27,7 @@ Feel free to contribute to this project, but:
 
 ### Screenshots
 
-![screenshot of StrangePlayer Pro 1.0.0](readmesrc\Screenshot1.0.0.png)
+![screenshot of StrangePlayer Pro 1.0.0](\readmesrc\Screenshot1.0.0.png)
 
 
 
