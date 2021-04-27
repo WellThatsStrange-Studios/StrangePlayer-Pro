@@ -30,7 +30,10 @@ Feel free to contribute to this project, but:
 ### Screenshots
 
 ![screenshot of StrangePlayer Pro 1.0.0](https://github.com/WellThatsStrange-Studios/StrangePlayer-Pro/blob/main/readmesrc/Screenshot1.0.0.png)
+*Screenshot of StrangePlayer Pro 1.1.0*
 
+![Multitasking with StrangePlayer Pro](https://github.com/WellThatsStrange-Studios/StrangePlayer-Pro/blob/main/readmesrc/ScreenshotMultitasking.png)
+*You can listen to your favourite songs white programming*
 
 
 ------

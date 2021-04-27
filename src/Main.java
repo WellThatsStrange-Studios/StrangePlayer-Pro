@@ -1,11 +1,9 @@
 import javax.imageio.ImageIO;
 import javax.sound.sampled.*;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 
 public class Main {
 
@@ -26,7 +24,7 @@ public class Main {
         frame.setSize(500, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
-        frame.setTitle("StrangePlayer Pro 1.2.0");   //TODO: Everytime theres new release change this
+        frame.setTitle("StrangePlayer Pro 1.2.1");   //TODO: Everytime theres new release change this
 
         //Loading the icon from jar - I know its overcomplicated
         ClassLoader classLoader = ClassLoaderFinder.class.getClassLoader();
