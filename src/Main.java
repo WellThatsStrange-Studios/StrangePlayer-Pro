@@ -32,15 +32,13 @@ public class Main {
         ClassLoader classLoader = ClassLoaderFinder.class.getClassLoader();
         InputStream stream = classLoader.getResourceAsStream("assets/Note_icon.png");
         BufferedImage image = ImageIO.read(stream);
-        System.out.println(image == null);
         assert image != null;
         ImageIcon icon = new ImageIcon(image);
 
         frame.setIconImage(icon.getImage());
 
         //Making the JFrame appear centered
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2);
+        frame.setLocationRelativeTo(null);
 
         System.out.println("[DEBUG] Icon set!");
 
